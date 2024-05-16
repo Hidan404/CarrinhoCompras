@@ -38,7 +38,7 @@ public class CarrinhoDeCompras {
             System.out.println(items);
         }
         else{
-            System.out.println("esta vazia a lista ");
+            System.out.println("esta vazia a lista. ");
         }
     }
 }
