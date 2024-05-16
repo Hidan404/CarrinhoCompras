@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.management.RuntimeErrorException;
-
 public class CarrinhoDeCompras {
     
     List<Item> items = new ArrayList<>();
