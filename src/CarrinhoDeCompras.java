@@ -14,10 +14,11 @@ public class CarrinhoDeCompras {
     public void removerItem(String nome){
         List<Item> removeritem = new ArrayList<>();
         for (Item item : items) {
-            if(item.getNomeProduto().equals(removeritem)){
+            if(item.getNomeProduto().equals(nome)){
                 removeritem.add(item);
             }
         }
+        items.removeAll(removeritem);
     }
 
     public double calcularValorTotal(){
@@ -32,5 +33,14 @@ public class CarrinhoDeCompras {
        else{
             throw new RuntimeException("A lista nao tem elementos");
        }
+    }
+
+    public void exibirItems(){
+        if(!items.isEmpty()){
+            System.out.println(items);
+        }
+        else{
+            System.out.println("esta vazia a lista ");
+        }
     }
 }
